@@ -22,3 +22,4 @@ for file in $FILES
 do
   echo $(basename $file)
 done
+
