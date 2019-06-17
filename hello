@@ -1,6 +1,6 @@
 #!/bin/bash
 
-info="to execute on mac you need to perceed filename with ./"
+info="to execute on mac you need to precede filename with ./"
 
 echo Info: $info!
 
@@ -13,7 +13,8 @@ then
 else
   diff=$((18-$age))
   echo You need to wait $diff to drink
-  
+  echo Using basic calculation \(bc\):
+  bc <<< 18-$age  
 fi
 
 FILES=/Applications/XAMPP/htdocs/*
