@@ -1,0 +1,24 @@
+#!/bin/bash
+
+info="to execute on mac you need to perceed filename with ./"
+
+echo Info: $info!
+
+echo Now type your age:
+read age
+
+if [ "$age" -gt "18" ]
+then
+  echo Seems like youre mature.
+else
+  diff=$((18-$age))
+  echo You need to wait $diff to drink
+  
+fi
+
+FILES=/Applications/XAMPP/htdocs/*
+
+for file in $FILES
+do
+  echo $(basename $file)
+done
